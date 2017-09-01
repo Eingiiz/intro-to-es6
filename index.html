@@ -1,3 +1,106 @@
 
-<script src='build/main.bundle.js'></script>
-Hello Wrold
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+    <style>
+        .btn{
+            padding : 20px  ;
+            border-radius: 16px; 
+			background-color :#CD5C5C;
+        }
+		.btn2{background-color: #FFDAB9;}
+		.btn3{background-color: #99FF99;}
+		.btn4{background-color: #99FF66;}
+		.btn5{background-color: #FFFFCC;}
+		.btn6{background-color: #FFCC66;}
+		.btn7{background-color: #CC6699;}
+		.btn8{background-color: #CC99CC;}
+		.btn9{background-color: #F4A460;}
+    </style>
+    <h1 style="text-align : center ; font-family: 'Baloo Bhaijaan', cursive;">Keyboard</h1>
+</head>
+
+<body style="background-color :#D2B48C">
+
+
+    <div style="text-align : center">
+        <textarea id="output" rows="5" cols="100" readonly="readonly" placeholder="Enter your text here."></textarea><br><br><br>
+        <div style="padding : 20px ;background-color :#000000;
+        width: 850;
+        margin: auto;">
+       
+
+        <button class="btn" onclick="go('~')">~</button>
+        <button class="btn btn2" onclick="go('1')">1</button>
+        <button class="btn" onclick="go('2')">2</button>
+        <button class="btn btn2" onclick="go('3')">3</button>
+        <button class="btn" onclick="go('4')">4</button>
+        <button class="btn btn2" onclick="go('5')">5</button>
+        <button class="btn" onclick="go('6')">6</button>
+        <button class="btn btn2" onclick="go('7')">7</button>
+        <button class="btn" onclick="go('8')">8</button>
+        <button class="btn btn2" onclick="go('9')">9</button>
+        <button class="btn" onclick="go('0')">0</button>
+        <button class="btn btn2" onclick="go('-')">-</button>
+        <button class="btn" onclick="go('=')">=</button>
+        <button class="btn btn2" onclick="backspace()">Delete</button><br>
+        <button class="btn btn3" onclick="go('\t')">Tab</button>
+        <button class="btn btn4" onclick="go('q')">Q</button>
+        <button class="btn btn3" onclick="go('w')">W</button>
+        <button class="btn btn4" onclick="go('e')">E</button>
+        <button class="btn btn3" onclick="go('r')">R</button>
+        <button class="btn btn4" onclick="go('t')">T</button>
+        <button class="btn btn3" onclick="go('y')">Y</button>
+        <button class="btn btn4" onclick="go('u')">U</button>
+        <button class="btn btn3" onclick="go('i')">I</button>
+        <button class="btn btn4" onclick="go('o')">O</button>
+        <button class="btn btn3" onclick="go('p')">P</button>
+        <button class="btn btn4" onclick="go('[')">[</button>
+        <button class="btn btn3" onclick="go(']')">]</button>
+        <button class="btn btn4" onclick="go('\\')">\</button><br>
+        <button class="btn btn5" >CapsLock</button>
+        <button class="btn btn6" onclick="go('a')">A</button>
+        <button class="btn btn5" onclick="go('s')">S</button>
+        <button class="btn btn6" onclick="go('d')">D</button>
+        <button class="btn btn5" onclick="go('f')">F</button>
+        <button class="btn btn6" onclick="go('g')">G</button>
+        <button class="btn btn5" onclick="go('h')">H</button>
+        <button class="btn btn6" onclick="go('j')">J</button>
+        <button class="btn btn5" onclick="go('k')">K</button>
+        <button class="btn btn6" onclick="go('l')">L</button>
+        <button class="btn btn5" onclick="go(';')">;</button>
+        <button class="btn btn6" onclick="go('\'')">'</button>
+        <button class="btn btn5" onclick="go('\n')">Enter</button><br>
+        <button class="btn btn7" >Shift</button>
+        <button class="btn btn8" onclick="go('z')">Z</button>
+        <button class="btn btn7" onclick="go('x')">X</button>
+        <button class="btn btn8" onclick="go('c')">C</button>
+        <button class="btn btn7" onclick="go('v')">V</button>
+        <button class="btn btn8" onclick="go('b')">B</button>
+        <button class="btn btn7" onclick="go('n')">N</button>
+        <button class="btn btn8" onclick="go('m')">M</button>
+        <button class="btn btn7" onclick="go(',')">,</button>
+        <button class="btn btn8" onclick="go('.')">.</button>
+        <button class="btn btn7" onclick="go('/')">/</button>
+		<button class="btn btn8" onclick="go('_')">_</button>
+		<button class="btn btn7" onclick="go('@')">@</button>
+        <button class="btn btn8" >Shift</button><br><br>
+        <button class="btn btn9" style="width : 200px" onclick="go(' ')">Space</button><br><br>
+<div>
+
+</div>
+        </div>
+    </div>
+        
+
+
+    <script src='key.js'></script>
+</body>
+
+</html>
